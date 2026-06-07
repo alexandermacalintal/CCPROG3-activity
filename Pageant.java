@@ -31,7 +31,7 @@ public class Pageant{
             System.out.println("Can" + " " + contestants[0].getName() + " " + "compete in singing : " + canCompete);
         }
         else{
-            System.out.println("Contestant 1 is not old enough to compete in singing.");
+            System.out.println(contestants[0].getName() + " is not old enough to compete in singing.");
         }
 
         contestants = null;
