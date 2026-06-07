@@ -16,6 +16,7 @@ public class Contestant{
     {
         name = n;
         country = c;
+        age = 18;
         talents = new String[3];
     }
     public String getName()
@@ -30,17 +31,22 @@ public class Contestant{
 
     public void addTalent(String t)
     {
-        if(talents.size()<talents.length)
-        {
-            talents[talents.size] = t;
-        }
+        boolean added = false;
+        for(int i = 0; i < talents.length && !added; i++)
+            {
+                if(talents[i] == null)
+                {
+                   talents[i] = t;    
+                   added = true;
+                }
+            }
     }
 
     public boolean canCompete(String t)
     {
-        for(int i=0; i < talents.size; i++)
+        for(int i=0; i < talents.length; i++)
         {
-            if(talents[i].equalsTo(t))
+            if(talents[i] != null && talents[i].equals(t))
             {
                 return true;
             }
@@ -50,9 +56,9 @@ public class Contestant{
 
     public boolean canCompete(String t, int maxAge)
     {
-        for(int i=0; i < talents.size; i++)
+        for(int i=0; i < talents.length; i++)
         {
-            if(talents[i].equalsTo(t) && age <= maxAge)
+            if(talents[i] != null && talents[i].equals(t) && age <= maxAge)
             {
                 return true;
             }
