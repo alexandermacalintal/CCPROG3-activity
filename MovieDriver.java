@@ -31,9 +31,7 @@ public class MovieDriver {
         for(int i = 0 ;i < mustWatch.length; i++){
             if(mustWatch[i] != null){
             System.out.println("Movie " + (i+1) + ":");
-            System.out.println("Title: " + mustWatch[i].getTitle());
-            System.out.println("Genre: " + mustWatch[i].getGenre());
-            System.out.println("Year: " + mustWatch[i].getYear());
+            System.out.println(mustWatch[i].toString());
             System.out.println();
             }
         }
@@ -49,9 +47,7 @@ public class MovieDriver {
         for(int i = 0 ;i < mustWatch.length; i++){
             if(mustWatch[i] != null){
                 System.out.println("Movie " + (i+1) + ":");
-                System.out.println("Title: " + mustWatch[i].getTitle());
-                System.out.println("Genre: " + mustWatch[i].getGenre());
-                System.out.println("Year: " + mustWatch[i].getYear());
+                System.out.println(mustWatch[i].toString());
                 System.out.println();
             }
         }
@@ -106,18 +102,14 @@ public class MovieDriver {
         for(int i = 0 ;i < mustWatch.length; i++){
             if(mustWatch[i] != null){
                 System.out.println("Movie " + (i+1) + ":");
-                System.out.println("Title: " + mustWatch[i].getTitle());
-                System.out.println("Genre: " + mustWatch[i].getGenre());
-                System.out.println("Year: " + mustWatch[i].getYear());
+                System.out.println(mustWatch[i].toString());
                 System.out.println();
             }
         }
         //21. Display the title, genre, and year of all movies in myRental
         for(int i = 0 ;i < j; i++){
             System.out.println("Movie " + (i+1) + ":");
-            System.out.println("Title: " + myRental[i].getTitle());
-            System.out.println("Genre: " + myRental[i].getGenre());
-            System.out.println("Year: " + myRental[i].getYear());
+            System.out.println(myRental[i].toString());
             System.out.println();
         }
         //22. Rent the movie Frozen 2 again and store that as the last element to myRental
