@@ -68,7 +68,7 @@ public class Movie{
     public Movie(String title, String genre, String actor)
     {
         this(title, genre, 2020);
-        this.actors[0] = actor;
+        this.addActor(actor);
     }
 
     /**

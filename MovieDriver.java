@@ -93,7 +93,7 @@ public class MovieDriver {
         //associated also to myRental
         j = 0;
         for(int i = 0; i < mustWatch.length; i++){
-            if(mustWatch[i] != null && mustWatch[i].getGenre().equalsIgnoreCase("kids")){
+            if(mustWatch[i] != null && mustWatch[i].getGenre().equals("kids")){
                 mustWatch[i].rent();
                 myRental[j] = mustWatch[i]; //myRental is associated, so it stores the pointer and not a copy.
                 j++;
@@ -134,7 +134,7 @@ public class MovieDriver {
         myRental = null;
         //25. Delete the movie object with title X-Men. 
         for(int i = 0; i < mustWatch.length; i++){
-            if(mustWatch[i] != null && mustWatch[i].getTitle().equalsIgnoreCase("X-Men")){
+            if(mustWatch[i] != null && mustWatch[i].getTitle().equals("X-Men")){
                 mustWatch[i] = null; //No longer referenced so java deletes it automatically
                 Movie.decrement();
             }
