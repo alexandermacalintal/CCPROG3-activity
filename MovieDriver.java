@@ -69,7 +69,6 @@ public class MovieDriver {
         String[] thirdMovieActors = mustWatch[2].getActors();
         int j = 0;
         System.out.println("Actors in " + mustWatch[2].getTitle() + ":");
-        System.out.println();
         for(int i = 0; i < thirdMovieActors.length; i++){
             if(thirdMovieActors[i] != null){
                 System.out.println("Actor " + (j+1) + ": " + thirdMovieActors[i]);
@@ -78,8 +77,8 @@ public class MovieDriver {
         }
         //16. Display all actors of the second movie stored in mustWatch
         String[] secondMovieActors = mustWatch[1].getActors();
-        System.out.println("Actors in " + mustWatch[1].getTitle() + ":");
         System.out.println();
+        System.out.println("Actors in " + mustWatch[1].getTitle() + ":");
         j = 0;
         for(int i = 0; i < secondMovieActors.length; i++){
             if(secondMovieActors[i] != null){
