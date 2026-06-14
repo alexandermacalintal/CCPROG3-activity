@@ -1,5 +1,6 @@
 /** Movie is the class created to represent an online movie
- * @author Alexander Jacob Macalintal & Aaron Jacob Espinosa
+ * @author Alexander Jacob Macalintal
+ * @author Aaron Jacob Espinosa
  * @version 1.0
  * @since 2026-06-14
  */
@@ -83,6 +84,7 @@ public class Movie{
     }
     
     /**
+     * Returns the title of the movie
      * @return the movie title
      */
     public String getTitle()
@@ -91,6 +93,7 @@ public class Movie{
     }
 
     /** 
+     * Returns the genre of the movie
      * @return the movie genre
      */
     public String getGenre()
@@ -99,6 +102,7 @@ public class Movie{
     }
 
     /**
+     * Returns the year the movie was released
      * @return the year released
      */
     public int getYear()
@@ -107,6 +111,7 @@ public class Movie{
     }
 
     /**
+     * Returns the array of actors in the movie.
      * @return the actors array
      */
     public String[] getActors()
@@ -115,6 +120,7 @@ public class Movie{
     }
 
     /**
+     * Returns the number of times this movie has been rented.
      * @return the rental count
      */
     public int getNumRented()
@@ -123,6 +129,7 @@ public class Movie{
     }
     
     /**
+     * Returns the total number of Movie objects that have been instantiated.
      * @return the total movie count
      */
     public static int getMovieCount()
